@@ -1,42 +1,26 @@
-body {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papinator - Geniul Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.game-container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-    width: 400px;
-}
+    <div class="game-container">
+        <h1>Papinator</h1>
+        <div id="character-image">🧞‍♂️</div>
+        
+        <div id="question-box">
+            <p id="text">Gândește-te la un personaj, iar eu îl voi ghici!</p>
+        </div>
 
-#character-image {
-    font-size: 80px;
-    margin-bottom: 20px;
-}
+        <div id="options">
+            <button onclick="startGame()">Începe Jocul</button>
+        </div>
+    </div>
 
-button {
-    background: #ff9800;
-    border: none;
-    padding: 10px 25px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin: 10px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #e68900;
-    transform: scale(1.05);
-}
+    <script src="script.js"></script>
+</body>
+</html>
